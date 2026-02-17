@@ -1,3 +1,4 @@
+# Digit Recognizer App using MNIST dataset
 import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
@@ -5,8 +6,8 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-# LOAD MODEL
-model = tf.keras.models.load_model("C:\\Users\\Ritesh Bhosale\\Documents\\Handwritten Digit Recognizer\\models\\digit_model.keras")
+# LOAD MODEL (Add your model file path)
+model = tf.keras.models.load_model("File Path")
 print("Model loaded!")
 
 # PREPROCESS
