@@ -6,7 +6,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 # LOAD MODEL
-model = tf.keras.models.load_model("digit_model.keras")
+model = tf.keras.models.load_model("C:\\Users\\Ritesh Bhosale\\Documents\\Handwritten Digit Recognizer\\models\\digit_model.keras")
 print("Model loaded!")
 
 # PREPROCESS
@@ -36,11 +36,6 @@ def choose_image():
 
     # preprocess
     processed = preprocess_image(file_path)
-
-    # debug view
-    plt.imshow(processed.reshape(28,28), cmap="gray")
-    plt.title("Given to model")
-    plt.show()
 
     # predict
     pred = model.predict(processed)
